@@ -1,0 +1,197 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/mainnav.ejs %>
+<%- include ../partials/maincontent.ejs %>
+
+
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            
+            <!-- Repeatable Row-->
+                <% for(let count = 0; count < SurveyList.length; count++) { %>
+                        
+                <form>
+
+                <div class="form-group">
+                  <label for="surveyTitleTextField"><%= SurveyList[count].surveyTitle %></label>
+                </div>
+                <div class="form-group">
+                  <label for="question1TextField"><%= SurveyList[count].question1 %></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs1" 
+                    value="q1option1">
+                    <label class="form-check-label"><%= SurveyList[count].q1option1 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q1option2">
+                    <label class="form-check-label"><%= SurveyList[count].q1option2 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs3" 
+                    value="q1option3">
+                    <label class="form-check-label"><%= SurveyList[count].q1option3 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q1option2">
+                    <label class="form-check-label" for="examplecheckboxs4"><%= SurveyList[count].q1option4 %>
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="question1TextField"><%= SurveyList[count].question2 %></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs1" 
+                    value="q2option1">
+                    <label class="form-check-label"><%= SurveyList[count].q2option1 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q2option2">
+                    <label class="form-check-label"><%= SurveyList[count].q2option2 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs3" 
+                    value="q2option3">
+                    <label class="form-check-label"><%= SurveyList[count].q2option3 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q2option2">
+                    <label class="form-check-label"><%= SurveyList[count].q2option4 %>
+                    </label>
+                </div>
+
+                <br>
+                <div class="form-group">
+                  <label for="question1TextField"><%= SurveyList[count].question3 %></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs1" 
+                    value="q3option1">
+                    <label class="form-check-label"><%= SurveyList[count].q3option1 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q3option2">
+                    <label class="form-check-label"><%= SurveyList[count].q3option2 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs3" 
+                    value="q3option3">
+                    <label class="form-check-label"><%= SurveyList[count].q3option3 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q3option4">
+                    <label class="form-check-label"><%= SurveyList[count].q3option4 %>
+                    </label>
+                </div>
+
+                <br>
+                <div class="form-group">
+                  <label for="question1TextField"><%= SurveyList[count].question4 %></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs1" 
+                    value="q4option1">
+                    <label class="form-check-label"><%= SurveyList[count].q4option1 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q4option2">
+                    <label class="form-check-label"><%= SurveyList[count].q4option2 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs3" 
+                    value="q4option3">
+                    <label class="form-check-label"><%= SurveyList[count].q4option3 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q4option4">
+                    <label class="form-check-label"><%= SurveyList[count].q4option4 %>
+                    </label>
+                </div>
+
+                <br>
+                <div class="form-group">
+                  <label for="question1TextField"><%= SurveyList[count].question5 %></label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs1" 
+                    value="q5option1">
+                    <label class="form-check-label"><%= SurveyList[count].q5option1 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q5option2">
+                    <label class="form-check-label"><%= SurveyList[count].q5option2 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs3" 
+                    value="q5option3">
+                    <label class="form-check-label"><%= SurveyList[count].q5option3 %>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" 
+                    name="examplecheckboxs" id="examplecheckboxs2" 
+                    value="q5option4">
+                    <label class="form-check-label"><%= SurveyList[count].q5option4 %>
+                    </label>
+                </div>
+                <br>
+                <button class="btn btn-primary" type ="submit">
+                    <i class="fas fa-paper-plane">Submit</i>
+                </button>
+                <a href="/survey/edit/<%= SurveyList[count]._id %>" class="btn btn-primary">Edit</a>
+                <a href="/survey/delete/<%= SurveyList[count]._id %>" class="btn btn-danger">Delete</a>
+              </form>
+                <% } %>
+            
+
+              
+        </div>
+    </div>
+</div>
+
+<%- include ../partials/bottomnav.ejs %>
+
+<%- include ../partials/footer.ejs %>
